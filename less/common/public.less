@@ -1,0 +1,67 @@
+//reset css
+@charset 'utf-8';
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:visited{ text-decoration: none;}
+a:link{ text-decoration: none;}
+img {border: none; }
+button, input, select, textarea {
+    font-size: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body{font-size:14px}
+
+//设置常用变量及公用类
+
+
+//css3属性兼容类
+.border-radius(@value:0){
+	border-radius:@value;	
+}
+.background-size(@value:auto){
+	background-size:@string;
+}
+.box-shadow(@value:none;){
+	box-shadow:@value;
+}
+.box-shadow-ie(@value){
+	/*ie 兼容*/
+	background-size:cover
+}
+.opacity(@value:1){
+	opacity:@value;
+}
+.text-overflow(@value:ellipsis){
+	text-overflow:@value;
+	white-space:nowrap;
+	overflow:hidden;
+}
+.transform(@value:none){
+	transform:@value;
+	-ms-transform:@value;
+	-webkit-transform:@value;
+	-moz-transform:@value;
+	-o-transform:@value;
+}
+.transform-origin(@value:50% 50%){
+	transform-origin:@value;
+	-webkit-transform-origin:@value;
+	-ms-transform-origin:@value;
+	-moz-transform-origin:@value;
+	-o-transform-origin:@value;
+}
+.transition(@value){
+	transition:@value;
+	-webkit-transition:@value;
+	-moz-transition:@value;
+	-ms-transition:@value;
+	-o-transition:@value;
+}

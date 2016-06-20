@@ -1,0 +1,41 @@
+{
+  "name": "mfg_newb_webv2",
+  "version": "1.0.0",
+  "description": "mfg_newb_webv2",
+  "main": "gulpFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "humorHan",
+  "license": "ISC",
+  "dependencies": {
+    "style-loader": "*",
+    "css-loader": "*",
+    "less-loader": "*",
+    "webpack-stream": "*",
+    "gulp": "^3.8.11",
+    "gulp-less": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-plumber": "*",
+    "vinyl-named": "*",
+    "webpack": "1.12.2",
+    "tmodjs-loader": "*",
+    "url-loader": "*",
+    "stylus-loader": "*",
+    "script-loader": "*",
+    "gulp-minify-css": "*",
+    "gulp-minify-html": "*",
+    "gulp-uglify": "*",
+    "del": "*",
+    "vinyl-paths": "*",
+    "gulp-rev": "*",
+    "gulp-rev-collector": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.mfg.com/yangjin/mfg_newb_webv2.git"
+  }
+}
