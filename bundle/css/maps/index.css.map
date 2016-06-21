@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.less"],"names":[],"mappings":"AAGA;EACC,gBAAA;;AAED;EACA,kBAAA;EACC,qBAAA","sourcesContent":["@bcolor:gray;\r\n@ucolor:yellow;\r\n@lcolor:green;\r\nbody{\r\n\tbackground:@bcolor;\r\n}\r\n.nav{\r\nbackground:@ucolor;\r\n\tdisplay:inline-block;\r\n\r\n}"],"file":"index.css","sourceRoot":"/source/"}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["indexpublic.less"],"names":[],"mappings":"AAGA;EACC,mBAAA;;AAED;EACA,kBAAA;EACC,qBAAA","sourcesContent":["@bcolor:skyblue;\r\n@ucolor:yellow;\r\n@lcolor:green;\r\nbody{\r\n\tbackground:@bcolor;\r\n}\r\n.nav{\r\nbackground:@ucolor;\r\n\tdisplay:inline-block;\r\n}"],"file":"indexpublic.css","sourceRoot":"/source/"}

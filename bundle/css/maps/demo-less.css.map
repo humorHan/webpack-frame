@@ -1,0 +1,1 @@
+{"version":3,"sources":["demo-less.less"],"names":[],"mappings":"AAEA;EACI,eAAA;EACA,aAAA;EACA,UAAA","sourcesContent":["@size:10px;\r\n@bg-color:red;\r\nbody{\r\n    background: @bg-color;\r\n    height: 100px;\r\n    font:@size;\r\n}"],"file":"demo-less.css","sourceRoot":"/source/"}

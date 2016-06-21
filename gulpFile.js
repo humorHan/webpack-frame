@@ -29,7 +29,7 @@ var less = require('gulp-less');
 
 var less_source_maps = require('gulp-sourcemaps');
 
-gulp.task("less-to-css", function(){
+gulp.task("less-to-css",['publish-img'], function(){
     return gulp.src(path.join(__dirname, './less/**/*.less'))
         .pipe(less_source_maps.init())
         .pipe(less())
@@ -55,7 +55,7 @@ gulp.task('js', ['publish-static-js'],function(){
         .pipe(gulp.dest(path.join(__dirname, '/bundle/js/')));
 });
 
-gulp.task('publish-static-js',function(){
+gulp.task('publish-static-js',['less-to-css'],function(){
     return gulp.src([path.join(__dirname, '/dep/jquery-1.12.1.min.js')])
         .pipe(gulp.dest(path.join(__dirname, '/bundle/js/')));
 });
@@ -66,10 +66,10 @@ gulp.task('publish-img',function(){
 });
 
 //测试包
-gulp.task('bundle',['publish-img','js-dev','less-to-css','watch:less-dev']);
+gulp.task('bundle',['js-dev','watch:less-dev']);
 
 //正式包(不压缩和不提取公共模块 不版本化)
-gulp.task('pack',['publish-img','js','less-to-css']);
+gulp.task('pack',['js']);
 
 //正式包（不压缩和不提取公共模块）
 gulp.task('package', ['rev-css']);
