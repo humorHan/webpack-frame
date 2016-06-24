@@ -9,12 +9,18 @@ var node_modules = path.resolve(__dirname, 'node_modules');
  * webpack 配置
  * @param isWatch 监听模式包括watch和cache参数
  * @param isDev   调试模式
- * @isRev isRev   版本化和压缩
+ * @param isRev   压缩
  */
 module.exports = function(isWatch, isDev, isRev) {
     return {
         watch: isWatch,
         devtool: isDev ? "#inline-source-map" : null,//eval-source-map
+        output: {
+            path: path.join(__dirname, 'bundle', 'js'),
+            publicPath: '/webpack-frame/bundle/js/',
+            filename: '[name].js',
+            chunkFilename: '[name].chunk.js'
+        },
         module: {
             loaders: [
                 {test:/\.css$/,loader:"style!css"},
@@ -41,7 +47,6 @@ module.exports = function(isWatch, isDev, isRev) {
                             warnings: false
                         }
                     }),
-                    //正式包: 但是要在html中引用vendor
                     new webpack.optimize.CommonsChunkPlugin({
                         name: "vendor",
                         filename: "vendor.js",
@@ -49,7 +54,13 @@ module.exports = function(isWatch, isDev, isRev) {
                     })
                 ]
             } else {
-                return []
+                return [
+                    new webpack.optimize.CommonsChunkPlugin({
+                        name: "vendor",
+                        filename: "vendor.js",
+                        minChunks: Infinity
+                    })
+                ]
             }
         })(),
         externals: {

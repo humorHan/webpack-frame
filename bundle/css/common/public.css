@@ -1,3 +1,4 @@
+@charset 'utf-8';
 body,
 h1,
 h2,
@@ -54,7 +55,6 @@ table {
 }
 body {
   font-size: 14px;
-  font-family: '微软雅黑';
 }
 
 /*# sourceMappingURL=../maps/common/public.css.map */

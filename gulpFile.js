@@ -65,13 +65,13 @@ gulp.task('publish-img',function(){
         .pipe(gulp.dest(path.join(__dirname, '/bundle/img/')));
 });
 
-//测试包
+//测试包(不压缩 不版本化 且开启调试模式)
 gulp.task('bundle',['js-dev','watch:less-dev']);
 
-//正式包(不压缩和不提取公共模块 不版本化)
+//测试包(不压缩 不版本化)
 gulp.task('pack',['js']);
 
-//正式包（不压缩和不提取公共模块）
+//正式包
 gulp.task('package', ['rev-css']);
 
 gulp.task('rev-css', ['rev-js'], function(){
@@ -111,7 +111,7 @@ gulp.task('dist-img',['compress-js'], function(){
 gulp.task('compress-js',['dist-static-js'],function() {
     return gulp.src(path.join(__dirname, '/js/**/*.js'))
         .pipe(named())
-        .pipe(webpack(webpackConfig(false, false, false)))
+        .pipe(webpack(webpackConfig(false, false, true)))
         .pipe(rev())
         .pipe(gulp.dest(path.join(__dirname, '/mfg/bundle/js/')))
         .pipe(rev.manifest('js.json'))

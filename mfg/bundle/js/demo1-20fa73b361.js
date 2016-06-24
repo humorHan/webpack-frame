@@ -1,0 +1,1 @@
+webpackJsonp([2,3],[function(o,n,c){o.exports=c(2)},,function(o,n,c){$(".dom1").css("background","1-1385e0dd1b.jpg"),c.e(1,function(o){c(3);var n=o(10,20);console.log(n)})}]);

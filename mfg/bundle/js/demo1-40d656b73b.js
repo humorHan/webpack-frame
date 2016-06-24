@@ -1,1 +1,0 @@
-webpackJsonp([1,6],[function(o,n,c){o.exports=c(4)},,,,function(o,n){$(".dom1").css("background","1-1385e0dd1b.jpg"),location.href="./b.html"}]);
