@@ -1,1 +1,0 @@
-{"version":3,"sources":["demo.less"],"names":[],"mappings":"AAAA,IACE;EACE,aAAA;EACA,YAAA;EACA,eAAe,uCAAf","sourcesContent":["body{\r\n  .dom1{\r\n    height: 100px;\r\n    width: 100px;\r\n    backgound: url('../img/1.jpg') center center no-repeat;\r\n  }\r\n}"],"file":"demo.css","sourceRoot":"/source/"}

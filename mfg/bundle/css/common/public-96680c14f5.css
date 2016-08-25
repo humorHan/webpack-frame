@@ -1,8 +1,0 @@
-@charset 'utf-8';
-blockquote,body,button,dd,dl,dt,h1,h2,h3,h4,h5,h6,hr,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
-ol,ul{list-style:none}
-a,a:hover,a:link,a:visited{text-decoration:none}
-img{border:none}
-button,input,select,textarea{font-size:100%}
-table{border-collapse:collapse;border-spacing:0}
-body{font-size:14px}
